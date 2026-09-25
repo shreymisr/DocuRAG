@@ -1,10 +1,10 @@
-# 📚 DocRAG — Production-Grade Document Q&A with Hybrid RAG
+# DocRAG — Production-Grade Document Q&A with Hybrid RAG
 
 A **Retrieval-Augmented Generation (RAG)** system featuring **Two-Stage Hybrid Search (Dense + BM25 Sparse)**, **Cross-Encoder Reranking**, and rigorous **Ragas Benchmark Evaluation**. Built with **FastAPI**, **Google Gemini**, **ChromaDB**, **Groq**, and **Streamlit**.
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 - **Two-Stage Retrieval Pipeline**:
   - **Stage 1 (High Recall)**: Hybrid retrieval combining dense vector similarity (`all-MiniLM-L6-v2`) with sparse keyword matching (`BM25`).
@@ -15,7 +15,7 @@ A **Retrieval-Augmented Generation (RAG)** system featuring **Two-Stage Hybrid S
 
 ---
 
-## 📊 Evaluation Results
+## Evaluation Results
 
 We benchmarked the upgraded retrieval pipeline (hybrid dense+BM25 search with cross-encoder reranking) against the original dense-only baseline using [Ragas](https://github.com/explodinggradients/ragas), with an independent LLM judge (`Groq / openai/gpt-oss-120b`) to avoid same-model bias between generator and evaluator.
 
@@ -32,7 +32,7 @@ We benchmarked the upgraded retrieval pipeline (hybrid dense+BM25 search with cr
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Component | Technology | Description |
 |---|---|---|
@@ -47,7 +47,7 @@ We benchmarked the upgraded retrieval pipeline (hybrid dense+BM25 search with cr
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 [User Document (PDF/TXT)]
@@ -76,7 +76,7 @@ We benchmarked the upgraded retrieval pipeline (hybrid dense+BM25 search with cr
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
 ### 1. Prerequisites
 - Python 3.11+
@@ -121,7 +121,7 @@ streamlit run app.py
 
 ---
 
-## 📈 Running the Ragas Benchmark Evaluation
+## Running the Ragas Benchmark Evaluation
 
 To execute the end-to-end evaluation pipeline comparing Baseline vs. Upgraded RAG:
 
@@ -139,7 +139,7 @@ python -m eval.generate_report
 
 ---
 
-## 🔌 API Endpoints
+## API Endpoints
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -149,7 +149,7 @@ python -m eval.generate_report
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 doc_rag/
@@ -179,6 +179,6 @@ doc_rag/
 
 ---
 
-## 📄 License
+## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
