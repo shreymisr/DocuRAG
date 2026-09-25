@@ -11,3 +11,8 @@ sentence-transformers
 pypdf
 python-dotenv
 pydantic-settings
+rank-bm25
+ragas
+datasets
+langchain-google-genai
+langchain-groq

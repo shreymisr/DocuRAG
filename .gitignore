@@ -14,15 +14,13 @@ venv/
 .venv/
 env/
 
-# Environment variables
+# Environment variables (CONTAINS API KEYS — NEVER COMMIT)
 .env
 
 # IDE
 .vscode/
 .idea/
-
-# Docker
-docker-compose.override.yml
+*.code-workspace
 
 # Data (generated at runtime)
 chroma_db/
@@ -30,9 +28,21 @@ backend/chroma_db/
 temp_uploads/
 backend/temp_uploads/
 
+# BM25 index (generated at runtime from ChromaDB data)
+bm25_corpus.pkl
+backend/chroma_db/bm25_corpus.pkl
+
+# Eval results (generated per-run, large JSON outputs)
+backend/eval/results/baseline.json
+backend/eval/results/upgraded.json
+
 # Jupyter
 .ipynb_checkpoints/
 
 # OS
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Antigravity / Agent tooling
+.agents/

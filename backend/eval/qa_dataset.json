@@ -1,0 +1,161 @@
+[
+  {
+    "question": "What are the common renewable energy sources mentioned in the document?",
+    "ground_truth": "Common renewable energy sources include sunlight, wind, moving water, geothermal heat, and biomass.",
+    "source_doc": "temp_uploads\\rag_testing_information.pdf",
+    "expected_chunk_ids": [
+      "rag_testing_information.pdf__p0__c0"
+    ]
+  },
+  {
+    "question": "According to the document, what is the definition of 'Photovoltaic (PV)'?",
+    "ground_truth": "Photovoltaic (PV) is a technology that converts light directly into electricity.",
+    "source_doc": "temp_uploads\\rag_testing_information.pdf",
+    "expected_chunk_ids": [
+      "rag_testing_information.pdf__p2__c6"
+    ]
+  },
+  {
+    "question": "What are the major limitations of solar power and how can their variability be managed?",
+    "ground_truth": "A major limitation of solar power is variability, as electricity production changes with daylight, weather, season, and the position of the sun. This variability can be balanced using batteries, grid connections, demand management, and other generation sources.",
+    "source_doc": "temp_uploads\\rag_testing_information.pdf",
+    "expected_chunk_ids": [
+      "rag_testing_information.pdf__p0__c1",
+      "rag_testing_information.pdf__p0__c2"
+    ]
+  },
+  {
+    "question": "How does energy storage support the electricity grid when renewable generation varies?",
+    "ground_truth": "Energy storage helps match electricity supply with demand when renewable generation varies, allowing electricity to be shifted from one time period to another.",
+    "source_doc": "temp_uploads\\rag_testing_information.pdf",
+    "expected_chunk_ids": [
+      "rag_testing_information.pdf__p1__c4",
+      "rag_testing_information.pdf__p2__c7"
+    ]
+  },
+  {
+    "question": "What is the typical lifespan of a lithium-ion battery used in energy storage systems?",
+    "ground_truth": "I don't have enough information to answer that.",
+    "source_doc": "temp_uploads\\rag_testing_information.pdf",
+    "expected_chunk_ids": []
+  },
+  {
+    "question": "What is the definition of 'Payload' as described in the document?",
+    "ground_truth": "'Payload' is defined as the instruments or other equipment carried by a launch vehicle or spacecraft.",
+    "source_doc": "temp_uploads\\rag_testing_space.pdf",
+    "expected_chunk_ids": [
+      "rag_testing_space.pdf__p2__c4"
+    ]
+  },
+  {
+    "question": "Which objects and environments can space exploration investigate?",
+    "ground_truth": "Space exploration can investigate planets, moons, asteroids, comets, stars, and the space environment.",
+    "source_doc": "temp_uploads\\rag_testing_space.pdf",
+    "expected_chunk_ids": [
+      "rag_testing_space.pdf__p0__c0"
+    ]
+  },
+  {
+    "question": "Explain the fundamental differences in design requirements between robotic spacecraft and human spaceflight missions.",
+    "ground_truth": "Robotic spacecraft are designed to perform observations and measurements without human presence, making them suitable for missions where conditions like distance, radiation, temperature, or travel time make human operation difficult. Human missions, on the other hand, require additional systems for life support, crew safety, habitation, food, water, waste management, and emergency response, which generally introduces greater mass, risk, and mission complexity.",
+    "source_doc": "temp_uploads\\rag_testing_space.pdf",
+    "expected_chunk_ids": [
+      "rag_testing_space.pdf__p1__c2"
+    ]
+  },
+  {
+    "question": "What factors influence the performance of launch vehicles?",
+    "ground_truth": "The performance of launch vehicles depends on their mass, propulsion, staging, and the target orbit or escape trajectory.",
+    "source_doc": "temp_uploads\\rag_testing_space.pdf",
+    "expected_chunk_ids": [
+      "rag_testing_space.pdf__p0__c0",
+      "rag_testing_space.pdf__p0__c1"
+    ]
+  },
+  {
+    "question": "What is the total budget allocated for space exploration missions in the upcoming year?",
+    "ground_truth": "I don't have enough information to answer that.",
+    "source_doc": "temp_uploads\\rag_testing_space.pdf",
+    "expected_chunk_ids": []
+  },
+  {
+    "question": "What are the three major learning approaches mentioned in the document?",
+    "ground_truth": "The common approaches to machine learning include supervised learning, unsupervised learning, and reinforcement learning.",
+    "source_doc": "temp_uploads\\rag_testing_ai_ml.pdf",
+    "expected_chunk_ids": [
+      "rag_testing_ai_ml.pdf__p0__c0"
+    ]
+  },
+  {
+    "question": "According to the document, what is the definition of a 'label'?",
+    "ground_truth": "A label is the target output associated with a training example.",
+    "source_doc": "temp_uploads\\rag_testing_ai_ml.pdf",
+    "expected_chunk_ids": [
+      "rag_testing_ai_ml.pdf__p2__c3"
+    ]
+  },
+  {
+    "question": "Describe how supervised learning and unsupervised learning differ in their use of data.",
+    "ground_truth": "Supervised learning uses examples containing inputs and known target outputs, allowing the model to learn a relationship. In contrast, unsupervised learning works with data where target labels are not provided, focusing instead on discovering groups, patterns, or lower-dimensional representations.",
+    "source_doc": "temp_uploads\\rag_testing_ai_ml.pdf",
+    "expected_chunk_ids": [
+      "rag_testing_ai_ml.pdf__p0__c0",
+      "rag_testing_ai_ml.pdf__p0__c1",
+      "rag_testing_ai_ml.pdf__p1__c2"
+    ]
+  },
+  {
+    "question": "What is overfitting, and what measures can help improve a model's ability to perform well on new data?",
+    "ground_truth": "Overfitting occurs when a model learns training data too specifically and performs poorly on new data. Regularization, appropriate model complexity, validation, and sufficient representative data can help improve generalization.",
+    "source_doc": "temp_uploads\\rag_testing_ai_ml.pdf",
+    "expected_chunk_ids": [
+      "rag_testing_ai_ml.pdf__p1__c2",
+      "rag_testing_ai_ml.pdf__p2__c3"
+    ]
+  },
+  {
+    "question": "What specific types of neural network architectures are discussed for supervised learning?",
+    "ground_truth": "I don't have enough information to answer that.",
+    "source_doc": "temp_uploads\\rag_testing_ai_ml.pdf",
+    "expected_chunk_ids": []
+  },
+  {
+    "question": "What common network devices are listed in the document?",
+    "ground_truth": "Common network devices include switches, routers, wireless access points, modems, and network interfaces.",
+    "source_doc": "temp_uploads\\rag_testing_networks.pdf",
+    "expected_chunk_ids": [
+      "rag_testing_networks.pdf__p0__c0"
+    ]
+  },
+  {
+    "question": "What is the definition of Bandwidth according to the Key Terms section?",
+    "ground_truth": "Bandwidth is defined as the data-carrying capacity of a communication link.",
+    "source_doc": "temp_uploads\\rag_testing_networks.pdf",
+    "expected_chunk_ids": [
+      "rag_testing_networks.pdf__p2__c3"
+    ]
+  },
+  {
+    "question": "According to the document, what methods can be used to improve network reliability?",
+    "ground_truth": "Network reliability can be improved through redundancy, monitoring, appropriate capacity planning, error handling, and resilient network design.",
+    "source_doc": "temp_uploads\\rag_testing_networks.pdf",
+    "expected_chunk_ids": [
+      "rag_testing_networks.pdf__p1__c2"
+    ]
+  },
+  {
+    "question": "How do switches and routers differ in their primary function regarding network traffic?",
+    "ground_truth": "A switch forwards frames within a local network, connecting LAN devices, whereas a router forwards packets between different networks for inter-network communication.",
+    "source_doc": "temp_uploads\\rag_testing_networks.pdf",
+    "expected_chunk_ids": [
+      "rag_testing_networks.pdf__p0__c1",
+      "rag_testing_networks.pdf__p2__c3"
+    ]
+  },
+  {
+    "question": "What are the specific maximum data transfer speeds for wireless access points mentioned in the document?",
+    "ground_truth": "I don't have enough information to answer that.",
+    "source_doc": "temp_uploads\\rag_testing_networks.pdf",
+    "expected_chunk_ids": []
+  }
+]

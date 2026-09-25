@@ -5,15 +5,17 @@ from typing import List
 from pydantic import BaseModel
 from app.services.ingestion import IngestionService
 from app.services.vector_store import VectorStoreService
+from app.services.reranker import RerankerService
 from app.services.rag_chain import RAGService
 from app.core.config import settings
 
 router = APIRouter()
 
-# Services
+# Services (instantiated ONCE at server startup)
 ingestion_service = IngestionService()
 vector_store_service = VectorStoreService()
-rag_service = RAGService(vector_store_service)
+reranker_service = RerankerService()
+rag_service = RAGService(vector_store_service, reranker_service)
 
 
 class ChatRequest(BaseModel):
